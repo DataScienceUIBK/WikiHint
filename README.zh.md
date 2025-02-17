@@ -135,8 +135,6 @@ for i, (hint, _) in enumerate(ranked_hints_answer_agnostic):
     print(f"排名 {i + 1}：{hint}")
 ```
 
----
-
 ### 📌 预期输出
 
 ```
