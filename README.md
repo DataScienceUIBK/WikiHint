@@ -105,20 +105,25 @@ Hint:
 | Answer-Aware    | *This is the capital of the Australian state of Victoria.* |
 | Answer-Agnostic | *This city is home to landmarks like the National Gallery of Victoria.* |
 
-## 📑 Citation
-
-```bibtex
-@inproceedings{WikiHint2025,
-  author    = {Jamshid Mozafari and Florian Gerhold and Adam Jatowt},
-  title     = {WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation},
-  booktitle = {SIGIR '25},
-  year      = {2025},
-  location  = {Padova, IT},
-  publisher = {ACM},
-  doi       = {XXXXXXX}
-}
-```
-
 ## 📜 License
 
 This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. You are free to use, share, and adapt the dataset with proper attribution.
+
+## 📑 Citation
+
+If you find this work useful, please cite [📜our paper](https://doi.org/10.48550/arXiv.2412.01626):
+
+Plain
+Mozafari, J., Piryani, B., Abdallah, A., & Jatowt, A. (2025). HintEval: A Comprehensive Framework for Hint Generation and Evaluation for Questions. arXiv preprint arXiv:2502.00857.
+
+```bibtex
+@article{mozafari2025wikihinthumanannotateddatasethint,
+      title={WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation}, 
+      author={Jamshid Mozafari and Florian Gerhold and Adam Jatowt},
+      year={2025},
+      eprint={2412.01626},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      doi={10.48550/arXiv.2412.01626}, 
+}
+```
