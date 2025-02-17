@@ -7,8 +7,6 @@
 
 WikiHint is a **human-annotated dataset** designed for **automatic hint generation and ranking** for factoid questions. This dataset, based on Wikipedia, contains **5,000 hints for 1,000 questions** and supports research in **hint evaluation, ranking, and generation**.
 
----
-
 ## 📂 Repository Structure
 
 ```
