@@ -7,37 +7,6 @@
 
 WikiHint is a **human-annotated dataset** designed for **automatic hint generation and ranking** for factoid questions. This dataset, based on Wikipedia, contains **5,000 hints for 1,000 questions** and supports research in **hint evaluation, ranking, and generation**.
 
-## 📂 Repository Structure
-
-```
-📂 WikiHint/                                                # 🗂 Dataset files
-│   ├── 📄 Training.json                                    # 📊 Training dataset (900 questions, 4500 hints)
-│   ├── 📄 Test.json                                        # 📊 Test dataset (100 questions, 500 hints)
-│
-├── 📂 Experiments/                                         # 🧪 Model-generated hints
-│   ├── 📄 GPT-4-Vanilla-answer-agnostic.json
-│   ├── 📄 GPT-4-Vanilla-answer-aware.json
-│   ├── 📄 LLaMA-3.1-405b-Vanilla-answer-agnostic.json
-│   ├── 📄 LLaMA-3.1-405b-Vanilla-answer-aware.json
-│   ├── 📄 LLaMA-3.1-70b-FTwA-answer-aware.json
-│   ├── 📄 LLaMA-3.1-70b-FTwoA-answer-agnostic.json
-│   ├── 📄 LLaMA-3.1-70b-Vanilla-answer-agnostic.json
-│   ├── 📄 LLaMA-3.1-70b-Vanilla-answer-aware.json
-│   ├── 📄 LLaMA-3.1-8b-FTwA-answer-aware.json
-│   ├── 📄 LLaMA-3.1-8b-FTwoA-answer-agnostic.json
-│   ├── 📄 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
-│   ├── 📄 LLaMA-3.1-8b-Vanilla-answer-aware.json
-│
-├── 📂 HumanEvaluation/                                     # 👨‍🔬 Human evaluation data
-│   ├── 📂 Person_1/ (Person_2, ..., Person_5)
-│   │   ├── 📑 Part_1.xlsx
-│   │   ├── 📑 Part_2.xlsx
-│   │   ├── ...
-│   │   ├── 📑 Part_10.xlsx
-│
-└── 📘 README.md                                            # 📖 This file
-```
-
 ## 🗂 Overview
 
 - **1,000 questions** with **5,000 manually created hints**.
@@ -209,6 +178,36 @@ This table presents an **evaluation of generated hints** across different **LLMs
 - **Familiarity**: Larger models generate **more familiar hints** based on common knowledge.
 - **Hint Length**: **Finetuned models (FTwA, FTwoA) generate shorter and better hints**.
 
+## 📂 Repository Structure
+
+```
+📂 WikiHint/                                                # 🗂 Dataset files
+│   ├── 📄 Training.json                                    # 📊 Training dataset (900 questions, 4500 hints)
+│   ├── 📄 Test.json                                        # 📊 Test dataset (100 questions, 500 hints)
+│
+├── 📂 Experiments/                                         # 🧪 Model-generated hints
+│   ├── 📄 GPT-4-Vanilla-answer-agnostic.json
+│   ├── 📄 GPT-4-Vanilla-answer-aware.json
+│   ├── 📄 LLaMA-3.1-405b-Vanilla-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-405b-Vanilla-answer-aware.json
+│   ├── 📄 LLaMA-3.1-70b-FTwA-answer-aware.json
+│   ├── 📄 LLaMA-3.1-70b-FTwoA-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-70b-Vanilla-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-70b-Vanilla-answer-aware.json
+│   ├── 📄 LLaMA-3.1-8b-FTwA-answer-aware.json
+│   ├── 📄 LLaMA-3.1-8b-FTwoA-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-8b-Vanilla-answer-aware.json
+│
+├── 📂 HumanEvaluation/                                     # 👨‍🔬 Human evaluation data
+│   ├── 📂 Person_1/ (Person_2, ..., Person_5)
+│   │   ├── 📑 Part_1.xlsx
+│   │   ├── 📑 Part_2.xlsx
+│   │   ├── ...
+│   │   ├── 📑 Part_10.xlsx
+│
+└── 📘 README.md                                            # 📖 This file
+```
 
 ## 📜 License
 
