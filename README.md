@@ -103,35 +103,6 @@ This table presents an **evaluation of generated hints** across different **LLMs
 - **Familiarity**: Larger models generate **more familiar hints** based on common knowledge.
 - **Hint Length**: **Finetuned models (FTwA, FTwoA) generate shorter and better hints**.
 
-## 🏆 HintRank: A Lightweight Hint Ranking Method
-
-HintRank is an **automatic ranking method** for hints using **BERT-based models**. It operates on **pairwise comparisons**, determining the **relative helpfulness of hints**.
-
-### ✨ Features:
-✔ **Lightweight**: Runs locally without requiring massive computational resources.  
-✔ **LLM-free evaluation**: Works without relying on **large-scale generative models**.  
-✔ **Human-aligned ranking**: Strong correlation with **human-assigned hint rankings**.  
-
-### 🔍 How It Works:
-1. **Concatenates question & two hints** → Converts them into BERT-compatible format.  
-2. **Computes hint quality** → Determines which hint is **more useful**.  
-3. **Generates hint rankings** → Assigns ranks based on pairwise comparisons.  
-
-### 🚀 Using HintRank:
-```python
-from hint_rank import HintRank
-
-question = "Which city is Australia's second-largest industrial centre?"
-hint_1 = "This city is the capital of the Australian State of Victoria."
-hint_2 = "This is the second most populous city in Australia after Sydney."
-
-ranker = HintRank()
-better_hint = ranker.compare(question, hint_1, hint_2)
-print(f"Better Hint: {better_hint}")
-```
-
-📌 **HintRank achieves** higher accuracy compared to **Convergence and LLM-based hint ranking methods**, making it an efficient and reliable tool.
-
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
@@ -164,6 +135,36 @@ print(f"Test set: {len(test_data)} questions")
 | Answer-Agnostic | *This city is home to landmarks like the National Gallery of Victoria.* |
 
 
+## 🏆 HintRank: A Lightweight Hint Ranking Method
+
+HintRank is an **automatic ranking method** for hints using **BERT-based models**. It operates on **pairwise comparisons**, determining the **relative helpfulness of hints**.
+
+### ✨ Features:
+✔ **Lightweight**: Runs locally without requiring massive computational resources.  
+✔ **LLM-free evaluation**: Works without relying on **large-scale generative models**.  
+✔ **Human-aligned ranking**: Strong correlation with **human-assigned hint rankings**.  
+
+### 🔍 How It Works:
+1. **Concatenates question & two hints** → Converts them into BERT-compatible format.  
+2. **Computes hint quality** → Determines which hint is **more useful**.  
+3. **Generates hint rankings** → Assigns ranks based on pairwise comparisons.  
+
+### 🚀 Using HintRank:
+```python
+from hint_rank import HintRank
+
+question = "Which city is Australia's second-largest industrial centre?"
+hint_1 = "This city is the capital of the Australian State of Victoria."
+hint_2 = "This is the second most populous city in Australia after Sydney."
+
+ranker = HintRank()
+better_hint = ranker.compare(question, hint_1, hint_2)
+print(f"Better Hint: {better_hint}")
+```
+
+📌 **HintRank achieves** higher accuracy compared to **Convergence and LLM-based hint ranking methods**, making it an efficient and reliable tool.
+
+
 ## 📜 License
 
 This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. You are free to use, share, and adapt the dataset with proper attribution.
@@ -187,7 +188,3 @@ Mozafari, J., Gerhold, F., & Jatowt, A. (2024). WikiHint: A Human-Annotated Data
       doi={10.48550/arXiv.2412.01626}, 
 }
 ```
-
----
-
-This README is now **structured, visually appealing, and includes a dedicated HintRank section** for users interested in automatic hint ranking! 🚀 Let me know if you'd like any further improvements! 😊
