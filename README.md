@@ -160,11 +160,6 @@ Listwise Hint Ranking
 
 ---
 
-### ✨ Features of `HintRank`:
-✔ **Lightweight**: Can run locally without high computational resources.  
-✔ **LLM-free evaluation**: Does not rely on large generative models.  
-✔ **Human-aligned ranking**: Strong correlation with human-assigned rankings.  
-
 ## 📊 🆚 WikiHint vs. TriviaHG Dataset Comparison
 
 The table below compares **WikiHint** with **TriviaHG**, the largest previous dataset for hint generation. WikiHint has **better convergence**, **shorter hints**, and **higher-quality** hints based on multiple evaluation metrics.
