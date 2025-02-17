@@ -206,9 +206,10 @@ This table presents an **evaluation of generated hints** across different **LLMs
 ## 📂 Repository Structure
 
 ```
-📂 WikiHint/                                                # 🗂 Dataset files
-│   ├── 📄 Training.json                                    # 📊 Training dataset (900 questions, 4500 hints)
-│   ├── 📄 Test.json                                        # 📊 Test dataset (100 questions, 500 hints)
+📂 WikiHint/                                                 # 🗂 Dataset files
+│   ├── 📄 Pipeline.png                                     # 📊 Dataset pipeline visualization
+│   ├── 📄 training.json                                    # 📊 Training dataset (900 questions, 4500 hints)
+│   ├── 📄 test.json                                        # 📊 Test dataset (100 questions, 500 hints)
 │
 ├── 📂 Experiments/                                         # 🧪 Model-generated hints
 │   ├── 📄 GPT-4-Vanilla-answer-agnostic.json
@@ -224,12 +225,27 @@ This table presents an **evaluation of generated hints** across different **LLMs
 │   ├── 📄 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
 │   ├── 📄 LLaMA-3.1-8b-Vanilla-answer-aware.json
 │
+├── 📂 HintRank/                                            # 🏆 Hint ranking method
+│   ├── 📄 EvaluationMethod.png                             # 📊 Visualization of HintRank evaluation method
+│   ├── 📄 hint_rank.py                                     # 📜 HintRank implementation
+│
 ├── 📂 HumanEvaluation/                                     # 👨‍🔬 Human evaluation data
-│   ├── 📂 Person_1/ (Person_2, ..., Person_5)
+│   ├── 📂 Person_1/  
 │   │   ├── 📑 Part_1.xlsx
 │   │   ├── 📑 Part_2.xlsx
-│   │   ├── ...
+│   │   ├── 📑 Part_3.xlsx
+│   │   ├── 📑 Part_4.xlsx
+│   │   ├── 📑 Part_5.xlsx
+│   │   ├── 📑 Part_6.xlsx
+│   │   ├── 📑 Part_7.xlsx
+│   │   ├── 📑 Part_8.xlsx
+│   │   ├── 📑 Part_9.xlsx
 │   │   ├── 📑 Part_10.xlsx
+│   │
+│   ├── 📂 Person_2/ (Same structure as Person_1)
+│   ├── 📂 Person_3/ (Same structure as Person_1)
+│   ├── 📂 Person_4/ (Same structure as Person_1)
+│   ├── 📂 Person_5/ (Same structure as Person_1)
 │
 └── 📘 README.md                                            # 📖 This file
 ```
