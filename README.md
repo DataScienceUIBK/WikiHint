@@ -53,14 +53,6 @@ print(f"Training set: {len(training_data)} questions")
 print(f"Test set: {len(test_data)} questions")
 ```
 
-#### Example of Answer-Aware vs. Answer-Agnostic Hints
-
-| Type             | Example Hint |
-|-----------------|-------------|
-| Answer-Aware    | *This is the capital of the Australian state of Victoria.* |
-| Answer-Agnostic | *This city is home to landmarks like the National Gallery of Victoria.* |
-
-
 ## 🏆 HintRank: A Lightweight Hint Ranking Method
 
 HintRank is an **automatic ranking method** for hints using **BERT-based models**. It operates on **pairwise comparisons**, determining the **relative helpfulness of hints**.
