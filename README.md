@@ -85,20 +85,6 @@ print(f"Training set: {len(training_data)} questions")
 print(f"Test set: {len(test_data)} questions")
 ```
 
-### 3️⃣ Using WikiHint for Hint Generation
-
-#### Example Prompt for LLMs
-
-```text
-You are a hint generator for factoid questions. The user asks you a question and you should generate a hint for that question without revealing the answer.
-```
-
-```text
-Q: Which city is Australia's second-largest industrial centre?
-A: Melbourne
-Hint: 
-```
-
 #### Example of Answer-Aware vs. Answer-Agnostic Hints
 
 | Type             | Example Hint |
