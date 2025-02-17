@@ -79,14 +79,32 @@ HintRank is an **automatic ranking method** for hints using **BERT-based models*
 2. **Computes hint quality** → Determines which hint is **more useful**.  
 3. **Generates hint rankings** → Assigns ranks based on pairwise comparisons.  
 
-### 🚀 Using HintRank:
+## 📌 Using `HintRank` for Hint Ranking
+
+The `HintRank` module is designed to **automatically rank hints** based on their helpfulness using **BERT-based models**.
+
+### 1️⃣ Install Dependencies
+
+Ensure you have the required dependencies installed:
+
+```sh
+pip install transformers torch numpy
+```
+
+### 2️⃣ Import and Initialize HintRank
+
+Navigate to the `wikiHint` directory and import the `HintRank` module:
+
 ```python
-from hint_rank import HintRank
+from HintRank.hint_rank import HintRank
 
 # Initialize the HintRank model
 ranker = HintRank()
+```
 
-# Define question, answer, and hints
+### 3️⃣ Rank Hints for a Given Question
+
+```python
 question = "What is the capital of Austria?"
 answer = "Vienna"
 hints = [
@@ -96,29 +114,32 @@ hints = [
 ]
 
 # Pairwise Comparison Example
-print("Pairwise Hint Comparison\n")
 better_hint_answer_aware = ranker.pairwise_compare(question, hints[1], hints[2], answer)
 better_hint_answer_agnostic = ranker.pairwise_compare(question, hints[0], hints[1])
 
 print(f"Answer-Aware: Hint {2 if better_hint_answer_aware == 1 else 3} is better than Hint {3 if better_hint_answer_aware == 0 else 2}.")
 print(f"Answer-Agnostic: Hint {1 if better_hint_answer_agnostic == 1 else 2} is better than Hint {2 if better_hint_answer_agnostic == 0 else 1}.")
+```
 
-print("\nListwise Hint Ranking")
+### 4️⃣ Listwise Hint Ranking
 
-# Answer-Aware Ranking
+You can also rank multiple hints at once:
+
+```python
 print("\nAnswer-Aware Ranked Hints:")
 ranked_hints_answer_aware = ranker.listwise_compare(question, hints, answer)
 for i, (hint, _) in enumerate(ranked_hints_answer_aware):
     print(f"Rank {i + 1}: {hint}")
 
-# Answer-Agnostic Ranking
 print("\nAnswer-Agnostic Ranked Hints:")
 ranked_hints_answer_agnostic = ranker.listwise_compare(question, hints)
 for i, (hint, _) in enumerate(ranked_hints_answer_agnostic):
     print(f"Rank {i + 1}: {hint}")
 ```
 
-### 📌 Example Output
+---
+
+### 📌 Expected Output
 
 ```
 Pairwise Hint Comparison
@@ -137,7 +158,12 @@ Listwise Hint Ranking
 		Rank 3: Mozart and Beethoven once lived here.
 ```
 
-📌 **HintRank achieves** higher accuracy compared to **Convergence and LLM-based hint ranking methods**, making it an efficient and reliable tool.
+---
+
+### ✨ Features of `HintRank`:
+✔ **Lightweight**: Can run locally without high computational resources.  
+✔ **LLM-free evaluation**: Does not rely on large generative models.  
+✔ **Human-aligned ranking**: Strong correlation with human-assigned rankings.  
 
 ## 📊 🆚 WikiHint vs. TriviaHG Dataset Comparison
 
