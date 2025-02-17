@@ -11,11 +11,11 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 ## 📂 Repository Structure
 
 ```
-📂 WikiHint/                # 🗂 Dataset files
-│   ├── 📄 Training.json        # 📊 Training dataset (900 questions, 4500 hints)
-│   ├── 📄 Test.json            # 📊 Test dataset (100 questions, 500 hints)
+📂 WikiHint/                                                # 🗂 Dataset files
+│   ├── 📄 Training.json                                    # 📊 Training dataset (900 questions, 4500 hints)
+│   ├── 📄 Test.json                                        # 📊 Test dataset (100 questions, 500 hints)
 │
-├── 📂 Experiments/             # 🧪 Model-generated hints
+├── 📂 Experiments/                                         # 🧪 Model-generated hints
 │   ├── 📜 GPT-4-Vanilla-answer-agnostic.json
 │   ├── 📜 GPT-4-Vanilla-answer-aware.json
 │   ├── 📜 LLaMA-3.1-405b-Vanilla-answer-agnostic.json
@@ -29,14 +29,14 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 │   ├── 📜 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
 │   ├── 📜 LLaMA-3.1-8b-Vanilla-answer-aware.json
 │
-├── 📂 HumanEvaluation/         # 👨‍🔬 Human evaluation data
+├── 📂 HumanEvaluation/                                     # 👨‍🔬 Human evaluation data
 │   ├── 📂 Person_1/ (Person_2, ..., Person_5)
 │   │   ├── 📑 Part_1.xlsx
 │   │   ├── 📑 Part_2.xlsx
 │   │   ├── 📑 ...
 │   │   ├── 📑 Part_10.xlsx
 │
-└── 📘 README.md                # 📖 This file
+└── 📘 README.md                                            # 📖 This file
 ```
 
 ## 🗂 Dataset Overview
