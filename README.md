@@ -103,7 +103,7 @@ answer = "Vienna"
 hints = [
     "Mozart and Beethoven once lived here.",
     "It is a big city in Europe.",
-    "Austria’s largest city and capital."
+    "Austria’s largest city."
 ]
 
 # Pairwise Comparison Example
@@ -141,13 +141,13 @@ Pairwise Hint Comparison
 
 Listwise Hint Ranking
 	Answer-Aware Ranked Hints:
-		Rank 1: Austria’s largest city and capital.
+		Rank 1: Austria’s largest city.
 		Rank 2: Mozart and Beethoven once lived here.
 		Rank 3: It is a big city in Europe.
 
 	Answer-Agnostic Ranked Hints:
 		Rank 1: It is a big city in Europe.
-		Rank 2: Austria’s largest city and capital.
+		Rank 2: Austria’s largest city.
 		Rank 3: Mozart and Beethoven once lived here.
 ```
 
