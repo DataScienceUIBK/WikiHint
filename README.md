@@ -1,10 +1,10 @@
-[![DOI](https://zenodo.org/badge/DOI/XXXXXX.svg)](https://doi.org/XXXXXXX)
-[![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)
-[![GitHub Stars](https://img.shields.io/github/stars/your-repo.svg)](https://github.com/your-repo/stargazers)
 <a href="https://doi.org/10.1145/3626772.3657855"><img src="https://img.shields.io/static/v1?label=Paper&message=ACM SIGIR&color=green&logo=arxiv"></a>
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)
+
 
 # WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation
 
+<img src="https://github.com/DataScienceUIBK/WikiHint/blob/main/Images/Pipeline.png">
 WikiHint is a **human-annotated dataset** designed for **automatic hint generation and ranking** for factoid questions. This dataset, based on Wikipedia, contains **5,000 hints for 1,000 questions** and supports research in **hint evaluation, ranking, and generation**.
 
 ## 📂 Repository Structure
