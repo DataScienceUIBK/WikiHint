@@ -1,4 +1,4 @@
-[English](README.md) | [中文](README.ch.md) | [Deutsch](README.gr.md) | [Français](README.fr.md) | [Русский](README.ru.md)
+[English](README.md) | [中文](README.zh.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Русский](README.ru.md)
 
 # WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation
 
