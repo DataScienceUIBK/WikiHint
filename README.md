@@ -1,51 +1,41 @@
+[![DOI](https://zenodo.org/badge/DOI/XXXXXX.svg)](https://doi.org/XXXXXXX)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)
+[![GitHub Stars](https://img.shields.io/github/stars/your-repo.svg)](https://github.com/your-repo/stargazers)
+<a href="https://doi.org/10.1145/3626772.3657855"><img src="https://img.shields.io/static/v1?label=Paper&message=ACM SIGIR&color=green&logo=arxiv"></a>
+
 # WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation
 
-[![DOI](https://zenodo.org/badge/DOI/XXXXXX.svg)](https://doi.org/XXXXXXX)  
-[![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)  
-[![GitHub Stars](https://img.shields.io/github/stars/your-repo.svg)](https://github.com/your-repo/stargazers)  
-[![GitHub Issues](https://img.shields.io/github/issues/your-repo.svg)](https://github.com/your-repo/issues)
-
 WikiHint is a **human-annotated dataset** designed for **automatic hint generation and ranking** for factoid questions. This dataset, based on Wikipedia, contains **5,000 hints for 1,000 questions** and supports research in **hint evaluation, ranking, and generation**.
-
-## 📜 Paper
-
-If you use WikiHint in your research, please cite:
-
-**WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation**  
-_Jamshid Mozafari, Florian Gerhold, Adam Jatowt_  
-*SIGIR '25, July 13–18, 2025, Padova, IT*  
-📄 [Read the paper](https://github.com/your-repo/wikiHint-paper.pdf)  
-📑 [DOI: XXXXXXX](https://doi.org/XXXXXXX)
 
 ## 📂 Repository Structure
 
 ```
-├── WikiHint/                # Dataset files
-│   ├── Training.json        # Training dataset (900 questions, 4500 hints)
-│   ├── Test.json            # Test dataset (100 questions, 500 hints)
+📂 WikiHint/                # 🗂 Dataset files
+│   📄 Training.json        # 📊 Training dataset (900 questions, 4500 hints)
+│   📄 Test.json            # 📊 Test dataset (100 questions, 500 hints)
 │
-├── Experiments/             # Model-generated hints
-│   ├── GPT-4-Vanilla-answer-agnostic.json
-│   ├── GPT-4-Vanilla-answer-aware.json
-│   ├── LLaMA-3.1-405b-Vanilla-answer-agnostic.json
-│   ├── LLaMA-3.1-405b-Vanilla-answer-aware.json
-│   ├── LLaMA-3.1-70b-FTwA-answer-aware.json
-│   ├── LLaMA-3.1-70b-FTwoA-answer-agnostic.json
-│   ├── LLaMA-3.1-70b-Vanilla-answer-agnostic.json
-│   ├── LLaMA-3.1-70b-Vanilla-answer-aware.json
-│   ├── LLaMA-3.1-8b-FTwA-answer-aware.json
-│   ├── LLaMA-3.1-8b-FTwoA-answer-agnostic.json
-│   ├── LLaMA-3.1-8b-Vanilla-answer-agnostic.json
-│   ├── LLaMA-3.1-8b-Vanilla-answer-aware.json
+📂 Experiments/             # 🧪 Model-generated hints
+│   📜 GPT-4-Vanilla-answer-agnostic.json
+│   📜 GPT-4-Vanilla-answer-aware.json
+│   📜 LLaMA-3.1-405b-Vanilla-answer-agnostic.json
+│   📜 LLaMA-3.1-405b-Vanilla-answer-aware.json
+│   📜 LLaMA-3.1-70b-FTwA-answer-aware.json
+│   📜 LLaMA-3.1-70b-FTwoA-answer-agnostic.json
+│   📜 LLaMA-3.1-70b-Vanilla-answer-agnostic.json
+│   📜 LLaMA-3.1-70b-Vanilla-answer-aware.json
+│   📜 LLaMA-3.1-8b-FTwA-answer-aware.json
+│   📜 LLaMA-3.1-8b-FTwoA-answer-agnostic.json
+│   📜 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
+│   📜 LLaMA-3.1-8b-Vanilla-answer-aware.json
 │
-├── HumanEvaluation/         # Human evaluation data
-│   ├── Person_1/ (Person_2, ..., Person_5)
-│   │   ├── Part_1.xlsx
-│   │   ├── Part_2.xlsx
-│   │   ├── ...
-│   │   ├── Part_10.xlsx
+📂 HumanEvaluation/         # 👨‍🔬 Human evaluation data
+│   📂 Person_1/ (Person_2, ..., Person_5)
+│   │   📑 Part_1.xlsx
+│   │   📑 Part_2.xlsx
+│   │   📑 ...
+│   │   📑 Part_10.xlsx
 │
-└── README.md                # This file
+📘 README.md                # 📖 This file
 ```
 
 ## 🗂 Dataset Overview
