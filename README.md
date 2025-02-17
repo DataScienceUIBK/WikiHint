@@ -188,3 +188,7 @@ Mozafari, J., Gerhold, F., & Jatowt, A. (2024). WikiHint: A Human-Annotated Data
       doi={10.48550/arXiv.2412.01626}, 
 }
 ```
+
+## 🙏Acknowledgments
+
+Thanks to our contributors and the University of Innsbruck for supporting this project.
