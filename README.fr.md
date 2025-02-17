@@ -134,8 +134,6 @@ for i, (hint, _) in enumerate(ranked_hints_answer_agnostic):
     print(f"Rang {i + 1} : {hint}")
 ```
 
----
-
 ### 📌 Résultat Attendu
 
 ```
