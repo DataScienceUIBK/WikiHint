@@ -35,7 +35,7 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/your-repo/wikiHint.git
+git clone https://github.com/DataScienceUIBK/WikiHint.git
 cd wikiHint
 ```
 
