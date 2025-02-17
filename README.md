@@ -188,6 +188,25 @@ for i, (hint, _) in enumerate(ranked_hints_answer_agnostic):
     print(f"Rank {i + 1}: {hint}")
 ```
 
+### 📌 Example Output
+
+```
+Pairwise Hint Comparison
+	Answer-Aware: Hint 3 is better than Hint 2.
+	Answer-Agnostic: Hint 2 is better than Hint 1.
+
+Listwise Hint Ranking
+	Answer-Aware Ranked Hints:
+		Rank 1: Austria’s largest city and capital.
+		Rank 2: Mozart and Beethoven once lived here.
+		Rank 3: It is a big city in Europe.
+
+	Answer-Agnostic Ranked Hints:
+		Rank 1: It is a big city in Europe.
+		Rank 2: Austria’s largest city and capital.
+		Rank 3: Mozart and Beethoven once lived here.
+```
+
 📌 **HintRank achieves** higher accuracy compared to **Convergence and LLM-based hint ranking methods**, making it an efficient and reliable tool.
 
 
