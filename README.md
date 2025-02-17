@@ -206,7 +206,7 @@ This table presents an **evaluation of generated hints** across different **LLMs
 ## 📂 Repository Structure
 
 ```
-📂 WikiHint/                                                 # 🗂 Dataset files
+📂 WikiHint/                                                # 🗂 Dataset files
 │   ├── 📄 Pipeline.png                                     # 📊 Dataset pipeline visualization
 │   ├── 📄 training.json                                    # 📊 Training dataset (900 questions, 4500 hints)
 │   ├── 📄 test.json                                        # 📊 Test dataset (100 questions, 500 hints)
