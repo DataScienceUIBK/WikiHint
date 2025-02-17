@@ -38,7 +38,7 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 └── 📘 README.md                                            # 📖 This file
 ```
 
-## 🗂 Dataset and Experiments Overview
+## 🗂 Overview
 
 - **1,000 questions** with **5,000 manually created hints**.
 - Hints ranked by **human annotators** based on helpfulness.
@@ -62,7 +62,7 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 
 ## 🏆 HintRank: A Lightweight Hint Ranking Method
 
-HintRank is an **automatic evaluation and ranking method** for factoid hints using **BERT-based models**. It operates on **pairwise comparisons**, determining the **relative helpfulness of hints**.
+HintRank is an **automatic ranking method** for hints using **BERT-based models**. It operates on **pairwise comparisons**, determining the **relative helpfulness of hints**.
 
 ### ✨ Features:
 ✔ **Lightweight**: Runs locally without requiring massive computational resources.  
