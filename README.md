@@ -81,7 +81,7 @@ The table below compares **WikiHint** with **TriviaHG**, the largest previous da
 
 This table presents an **evaluation of generated hints** across different **LLMs (LLaMA-3.1, GPT-4)** based on **Relevance, Readability, Convergence, Familiarity, Hint Length, and Answer Leakage**. It provides insights into how **finetuning (FT)** and **answer-awareness (wA)** affect hint quality.
 
-| **Model** | **Config** | **Use Answer?** | **Relevance** | **Readability** | **Convergence (LLaMA-8B)** | **Convergence (LLaMA-70B)** | **Familiarity** | **Length** | **Answer Leakage (Avg.)** | **Answer Leakage (Max.)** |
+| **Model** | **Config** | **Use Answer?** | **Rel** | **Read** | **Conv (LLaMA-8B)** | **Conv (LLaMA-70B)** | **Fam** | **Len** | **AnsLkg (Avg.)** | **AnsLkg (Max.)** |
 |-----------|----------|---------------|--------------|----------------|------------------|------------------|--------------|---------|----------------|----------------|
 | **GPT-4**    | Vanilla  | ✅      | 0.91         | 1.00           | 0.14             | 0.48             | 0.84         | 26.36   | 0.23           | 0.51           |
 | **GPT-4**    | Vanilla  | ❌      | 0.92         | 1.10           | 0.12             | 0.47             | 0.81         | 26.93   | 0.24           | 0.52           |
