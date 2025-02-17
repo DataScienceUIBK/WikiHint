@@ -1,0 +1,141 @@
+# WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation
+
+[![DOI](https://zenodo.org/badge/DOI/XXXXXX.svg)](https://doi.org/XXXXXXX)  
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)  
+[![GitHub Stars](https://img.shields.io/github/stars/your-repo.svg)](https://github.com/your-repo/stargazers)  
+[![GitHub Issues](https://img.shields.io/github/issues/your-repo.svg)](https://github.com/your-repo/issues)
+
+WikiHint is a **human-annotated dataset** designed for **automatic hint generation and ranking** for factoid questions. This dataset, based on Wikipedia, contains **5,000 hints for 1,000 questions** and supports research in **hint evaluation, ranking, and generation**.
+
+## 📜 Paper
+
+If you use WikiHint in your research, please cite:
+
+**WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation**  
+_Jamshid Mozafari, Florian Gerhold, Adam Jatowt_  
+*SIGIR '25, July 13–18, 2025, Padova, IT*  
+📄 [Read the paper](https://github.com/your-repo/wikiHint-paper.pdf)  
+📑 [DOI: XXXXXXX](https://doi.org/XXXXXXX)
+
+## 📂 Repository Structure
+
+```
+├── WikiHint/                # Dataset files
+│   ├── Training.json        # Training dataset (900 questions, 4500 hints)
+│   ├── Test.json            # Test dataset (100 questions, 500 hints)
+│
+├── Experiments/             # Model-generated hints
+│   ├── GPT-4-Vanilla-answer-agnostic.json
+│   ├── GPT-4-Vanilla-answer-aware.json
+│   ├── LLaMA-3.1-405b-Vanilla-answer-agnostic.json
+│   ├── LLaMA-3.1-405b-Vanilla-answer-aware.json
+│   ├── LLaMA-3.1-70b-FTwA-answer-aware.json
+│   ├── LLaMA-3.1-70b-FTwoA-answer-agnostic.json
+│   ├── LLaMA-3.1-70b-Vanilla-answer-agnostic.json
+│   ├── LLaMA-3.1-70b-Vanilla-answer-aware.json
+│   ├── LLaMA-3.1-8b-FTwA-answer-aware.json
+│   ├── LLaMA-3.1-8b-FTwoA-answer-agnostic.json
+│   ├── LLaMA-3.1-8b-Vanilla-answer-agnostic.json
+│   ├── LLaMA-3.1-8b-Vanilla-answer-aware.json
+│
+├── HumanEvaluation/         # Human evaluation data
+│   ├── Person_1/ (Person_2, ..., Person_5)
+│   │   ├── Part_1.xlsx
+│   │   ├── Part_2.xlsx
+│   │   ├── ...
+│   │   ├── Part_10.xlsx
+│
+└── README.md                # This file
+```
+
+## 🗂 Dataset Overview
+
+- **1,000 questions** with **5,000 manually created hints**.
+- Hints ranked by **human annotators** based on helpfulness.
+- Includes **answer-aware and answer-agnostic** hints.
+- Evaluated using **LLMs (LLaMA, GPT-4)** and **human performance studies**.
+- Supports **hint ranking** and **automatic hint evaluation**.
+
+## 🔬 Research Contributions
+
+✅ **First human-annotated dataset** for hint generation and ranking.  
+✅ **HintRank:** A lightweight method for automatic hint ranking.  
+✅ **Fine-tuning open-source LLMs** (LLaMA-3.1, GPT-4) for hint generation.  
+✅ **Human study** evaluating hint effectiveness in helping users answer questions.  
+
+## 📊 Results and Insights
+
+- **Answer-aware hints** improve hint effectiveness.  
+- **Finetuned LLaMA models** generate better hints than vanilla models.  
+- **Shorter hints** tend to be **more effective** than longer ones.  
+- **Human-generated hints** outperform LLM-generated hints in clarity and ranking.
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```sh
+git clone https://github.com/your-repo/wikiHint.git
+cd wikiHint
+```
+
+### 2️⃣ Load the Dataset
+
+```python
+import json
+
+with open("WikiHint/Training.json", "r") as f:
+    training_data = json.load(f)
+
+with open("WikiHint/Test.json", "r") as f:
+    test_data = json.load(f)
+
+print(f"Training set: {len(training_data)} questions")
+print(f"Test set: {len(test_data)} questions")
+```
+
+### 3️⃣ Using WikiHint for Hint Generation
+
+#### Example Prompt for LLMs
+
+```text
+You are a hint generator for factoid questions. The user asks you a question and you should generate a hint for that question without revealing the answer.
+```
+
+```text
+Q: Which city is Australia's second-largest industrial centre?
+A: Melbourne
+Hint: This is the second most populous city in Australia after Sydney.
+```
+
+#### Example of Answer-Aware vs. Answer-Agnostic Hints
+
+| Type             | Example Hint |
+|-----------------|-------------|
+| Answer-Aware    | *This is the capital of the Australian state of Victoria.* |
+| Answer-Agnostic | *This city is home to landmarks like the National Gallery of Victoria.* |
+
+## 📑 Citation
+
+```bibtex
+@inproceedings{WikiHint2025,
+  author    = {Jamshid Mozafari and Florian Gerhold and Adam Jatowt},
+  title     = {WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation},
+  booktitle = {SIGIR '25},
+  year      = {2025},
+  location  = {Padova, IT},
+  publisher = {ACM},
+  doi       = {XXXXXXX}
+}
+```
+
+## 🔗 Links
+
+- 📄 [Paper](https://github.com/your-repo/wikiHint-paper.pdf)  
+- 📚 [Dataset on Hugging Face](https://huggingface.co/datasets/your-repo/wikiHint)  
+- 📝 [ArXiv Preprint](https://arxiv.org/abs/XXXXXXX)  
+- 📢 [SIGIR 2025 Conference](https://sigir.org/)  
+
+## 📜 License
+
+This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. You are free to use, share, and adapt the dataset with proper attribution.
