@@ -38,7 +38,7 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 └── 📘 README.md                                            # 📖 This file
 ```
 
-## 🗂 Dataset Overview
+## 🗂 Dataset and Experiments Overview
 
 - **1,000 questions** with **5,000 manually created hints**.
 - Hints ranked by **human annotators** based on helpfulness.
