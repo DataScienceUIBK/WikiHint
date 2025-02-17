@@ -119,13 +119,6 @@ Hint:
 }
 ```
 
-## 🔗 Links
-
-- 📄 [Paper](https://github.com/your-repo/wikiHint-paper.pdf)  
-- 📚 [Dataset on Hugging Face](https://huggingface.co/datasets/your-repo/wikiHint)  
-- 📝 [ArXiv Preprint](https://arxiv.org/abs/XXXXXXX)  
-- 📢 [SIGIR 2025 Conference](https://sigir.org/)  
-
 ## 📜 License
 
 This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. You are free to use, share, and adapt the dataset with proper attribution.
