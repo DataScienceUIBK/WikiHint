@@ -76,9 +76,14 @@ HintRank is an **automatic ranking method** for hints using **BERT-based models*
 
 The `HintRank` module is designed to **automatically rank hints** based on their helpfulness using **BERT-based models**.
 
+### 🚀 Run the HintRank Demo in Google Colab
+
+You can easily try **HintRank** in your browser via **Google Colab**, with no local installation required. Simply **[launch the Colab notebook](https://colab.research.google.com/github/DataScienceUIBK/WikiHint/blob/main/HintRank/Demo.ipynb)** to explore **HintRank** interactively.
+
+
 ### 1️⃣ Install Dependencies
 
-Ensure you have the required dependencies installed:
+If running locally, ensure you have the required dependencies installed:
 
 ```sh
 pip install transformers torch numpy scipy
