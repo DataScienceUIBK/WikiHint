@@ -44,10 +44,10 @@ cd WikiHint
 ```python
 import json
 
-with open("WikiHint/training.json", "r") as f:
+with open("./WikiHint/training.json", "r") as f:
     training_data = json.load(f)
 
-with open("WikiHint/test.json", "r") as f:
+with open("./WikiHint/test.json", "r") as f:
     test_data = json.load(f)
 
 print(f"Training set: {len(training_data)} questions")
