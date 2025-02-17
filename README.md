@@ -38,8 +38,6 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 └── 📘 README.md                                            # 📖 This file
 ```
 
----
-
 ## 🗂 Dataset Overview
 
 - **1,000 questions** with **5,000 manually created hints**.
@@ -48,8 +46,6 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 - Evaluated using **LLMs (LLaMA, GPT-4)** and **human performance studies**.
 - Supports **hint ranking** and **automatic hint evaluation**.
 
----
-
 ## 🔬 Research Contributions
 
 ✅ **First human-annotated dataset** for hint generation and ranking.  
@@ -57,16 +53,12 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 ✅ **Human study** evaluating hint effectiveness in helping users answer questions.  
 ✅ **Fine-tuning open-source LLMs** (LLaMA-3.1, GPT-4) for hint generation.  
 
----
-
 ## 📊 Results and Insights
 
 - **Answer-aware hints** improve hint effectiveness.  
 - **Finetuned LLaMA models** generate better hints than vanilla models.  
 - **Shorter hints** tend to be **more effective** than longer ones.  
 - **Human-generated hints** outperform LLM-generated hints in clarity and ranking.
-
----
 
 ## 🏆 HintRank: A Lightweight Hint Ranking Method
 
@@ -96,8 +88,6 @@ print(f"Better Hint: {better_hint}")
 ```
 
 📌 **HintRank achieves** higher accuracy compared to **Convergence and LLM-based hint ranking methods**, making it an efficient and reliable tool.
-
----
 
 ## 🚀 Getting Started
 
@@ -130,13 +120,11 @@ print(f"Test set: {len(test_data)} questions")
 | Answer-Aware    | *This is the capital of the Australian state of Victoria.* |
 | Answer-Agnostic | *This city is home to landmarks like the National Gallery of Victoria.* |
 
----
 
 ## 📜 License
 
 This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. You are free to use, share, and adapt the dataset with proper attribution.
 
----
 
 ## 📑 Citation
 
