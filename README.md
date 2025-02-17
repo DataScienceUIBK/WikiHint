@@ -51,7 +51,7 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 
 ✅ **First human-annotated dataset** for hint generation and ranking.  
 ✅ **HintRank:** A lightweight method for automatic hint ranking.  
-✅ **Human study** evaluating hint effectiveness in helping users answer questions. 
+✅ **Human study** evaluating hint effectiveness in helping users answer questions.  
 ✅ **Fine-tuning open-source LLMs** (LLaMA-3.1, GPT-4) for hint generation.  
 
 ## 📊 Results and Insights
