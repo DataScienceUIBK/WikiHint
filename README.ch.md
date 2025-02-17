@@ -1,7 +1,7 @@
 # WikiHint：用于提示排序与生成的人工标注数据集
 
-<a href="https://doi.org/10.48550/arXiv.2412.01626"><img src="https://img.shields.io/static/v1?label=论文&message=arXiv&color=green&logo=arxiv"></a>
-<a href="https://colab.research.google.com/github/DataScienceUIBK/WikiHint/blob/main/HintRank/Demo.ipynb"><img src="https://img.shields.io/static/v1?label=Colab&message=演示&logo=Google%20Colab&color=f9ab00"></a>
+<a href="https://doi.org/10.48550/arXiv.2412.01626"><img src="https://img.shields.io/static/v1?label=Paper&message=arXiv&color=green&logo=arxiv"></a>
+<a href="https://colab.research.google.com/github/DataScienceUIBK/WikiHint/blob/main/HintRank/Demo.ipynb"><img src="https://img.shields.io/static/v1?label=Colab&message=Colab&logo=Google%20Colab&color=f9ab00"></a>
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 
 <img src="https://github.com/DataScienceUIBK/WikiHint/blob/main/WikiHint/Pipeline.png">
