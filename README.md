@@ -60,49 +60,6 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 - **Shorter hints** tend to be **more effective** than longer ones.  
 - **Human-generated hints** outperform LLM-generated hints in clarity and ranking.
 
-## 📊 🆚 WikiHint vs. TriviaHG Dataset Comparison
-
-The table below compares **WikiHint** with **TriviaHG**, the largest previous dataset for hint generation. WikiHint has **better convergence**, **shorter hints**, and **higher-quality** hints based on multiple evaluation metrics.
-
-| **Dataset** | **Subset** | **Relevance** | **Readability** | **Convergence** | **Familiarity** | **Length** | **Answer Leakage (Avg.)** | **Answer Leakage (Max.)** |
-|------------|-----------|--------------|----------------|--------------|--------------|---------|----------------|----------------|
-| TriviaHG   | Entire    | 0.95         | 0.71           | 0.57         | 0.77         | 20.82   | 0.23           | 0.44           |
-| WikiHint   | Entire    | 0.98         | 0.72           | 0.73         | 0.75         | 17.82   | 0.24           | 0.49           |
-| TriviaHG   | Train     | 0.95         | 0.73           | 0.57         | 0.75         | 21.19   | 0.22           | 0.44           |
-| WikiHint   | Train     | 0.98         | 0.71           | 0.74         | 0.76         | 17.77   | 0.24           | 0.49           |
-| TriviaHG   | Test      | 0.95         | 0.73           | 0.60         | 0.77         | 20.97   | 0.23           | 0.44           |
-| WikiHint   | Test      | 0.98         | 0.83           | 0.72         | 0.73         | 18.32   | 0.24           | 0.47           |
-
-📌 **Key Findings**:
-- **WikiHint outperforms TriviaHG** in **convergence**, meaning its hints help users **arrive at answers more effectively**.
-- **WikiHint’s hints are shorter**, leading to **more concise and effective guidance**.
-
-## 📊🤖 Evaluation of Generated Hints
-
-This table presents an **evaluation of generated hints** across different **LLMs (LLaMA-3.1, GPT-4)** based on **Relevance, Readability, Convergence, Familiarity, Hint Length, and Answer Leakage**. It provides insights into how **finetuning (FT)** and **answer-awareness (wA)** affect hint quality.
-
-| **Model** | **Config** | **Use Answer?** | **Rel** | **Read** | **Conv (LLaMA-8B)** | **Conv (LLaMA-70B)** | **Fam** | **Len** | **AnsLkg (Avg.)** | **AnsLkg (Max.)** |
-|-----------|----------|---------------|--------------|----------------|------------------|------------------|--------------|---------|----------------|----------------|
-| **GPT-4**    | Vanilla  | ✅      | 0.91         | 1.00           | 0.14             | 0.48             | 0.84         | 26.36   | 0.23           | 0.51           |
-| **GPT-4**    | Vanilla  | ❌      | 0.92         | 1.10           | 0.12             | 0.47             | 0.81         | 26.93   | 0.24           | 0.52           |
-| **LLaMA-3.1-405b** | Vanilla  | ✅ | 0.94         | 1.49           | 0.11             | 0.47             | 0.76         | 41.81   | 0.23           | 0.50           |
-| **LLaMA-3.1-405b** | Vanilla  | ❌| 0.92         | 1.53           | 0.10             | 0.45             | 0.78         | 50.91   | 0.23           | 0.50           |
-| **LLaMA-3.1-70b**  | FTwA    | ✅ | 0.88         | 1.50           | 0.09             | 0.42             | 0.84         | 43.69   | 0.22           | 0.48           |
-| **LLaMA-3.1-70b**  | Vanilla  | ✅ | 0.86         | 1.53           | 0.05             | 0.42             | 0.80         | 45.51   | 0.23           | 0.50           |
-| **LLaMA-3.1-70b**  | FTwoA   | ❌ | 0.86         | 1.50           | 0.08             | 0.38             | 0.80         | 51.07   | 0.22           | 0.51           |
-| **LLaMA-3.1-70b**  | Vanilla  | ❌ | 0.87         | 1.56           | 0.06             | 0.38             | 0.76         | 53.24   | 0.22           | 0.50           |
-| **LLaMA-3.1-8b**   | FTwA    | ✅ | 0.78         | 1.63           | 0.05             | 0.37             | 0.79         | 50.33   | 0.22           | 0.52           |
-| **LLaMA-3.1-8b**   | Vanilla  | ✅ | 0.81         | 1.72           | 0.05             | 0.32             | 0.80         | 54.38   | 0.22           | 0.50           |
-| **LLaMA-3.1-8b**   | FTwoA   | ❌ | 0.76         | 1.70           | 0.03             | 0.32             | 0.80         | 55.02   | 0.22           | 0.51           |
-| **LLaMA-3.1-8b**   | Vanilla  | ❌ | 0.78         | 1.76           | 0.04             | 0.30             | 0.83         | 52.99   | 0.22           | 0.50           |
-
-📌 **Key Takeaways**:
-- **Relevance**: **Larger models (405b, 70b) provide better hints** compared to smaller (8b) models.
-- **Readability**: **GPT-4 produces the most readable hints**.
-- **Convergence**: **Answer-aware hints (wA) help LLMs generate better hints**.
-- **Familiarity**: Larger models generate **more familiar hints** based on common knowledge.
-- **Hint Length**: **Finetuned models (FTwA, FTwoA) generate shorter and better hints**.
-
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
@@ -208,6 +165,49 @@ Listwise Hint Ranking
 ```
 
 📌 **HintRank achieves** higher accuracy compared to **Convergence and LLM-based hint ranking methods**, making it an efficient and reliable tool.
+
+## 📊 🆚 WikiHint vs. TriviaHG Dataset Comparison
+
+The table below compares **WikiHint** with **TriviaHG**, the largest previous dataset for hint generation. WikiHint has **better convergence**, **shorter hints**, and **higher-quality** hints based on multiple evaluation metrics.
+
+| **Dataset** | **Subset** | **Relevance** | **Readability** | **Convergence** | **Familiarity** | **Length** | **Answer Leakage (Avg.)** | **Answer Leakage (Max.)** |
+|------------|-----------|--------------|----------------|--------------|--------------|---------|----------------|----------------|
+| TriviaHG   | Entire    | 0.95         | 0.71           | 0.57         | 0.77         | 20.82   | 0.23           | 0.44           |
+| WikiHint   | Entire    | 0.98         | 0.72           | 0.73         | 0.75         | 17.82   | 0.24           | 0.49           |
+| TriviaHG   | Train     | 0.95         | 0.73           | 0.57         | 0.75         | 21.19   | 0.22           | 0.44           |
+| WikiHint   | Train     | 0.98         | 0.71           | 0.74         | 0.76         | 17.77   | 0.24           | 0.49           |
+| TriviaHG   | Test      | 0.95         | 0.73           | 0.60         | 0.77         | 20.97   | 0.23           | 0.44           |
+| WikiHint   | Test      | 0.98         | 0.83           | 0.72         | 0.73         | 18.32   | 0.24           | 0.47           |
+
+📌 **Key Findings**:
+- **WikiHint outperforms TriviaHG** in **convergence**, meaning its hints help users **arrive at answers more effectively**.
+- **WikiHint’s hints are shorter**, leading to **more concise and effective guidance**.
+
+## 📊🤖 Evaluation of Generated Hints
+
+This table presents an **evaluation of generated hints** across different **LLMs (LLaMA-3.1, GPT-4)** based on **Relevance, Readability, Convergence, Familiarity, Hint Length, and Answer Leakage**. It provides insights into how **finetuning (FT)** and **answer-awareness (wA)** affect hint quality.
+
+| **Model** | **Config** | **Use Answer?** | **Rel** | **Read** | **Conv (LLaMA-8B)** | **Conv (LLaMA-70B)** | **Fam** | **Len** | **AnsLkg (Avg.)** | **AnsLkg (Max.)** |
+|-----------|----------|---------------|--------------|----------------|------------------|------------------|--------------|---------|----------------|----------------|
+| **GPT-4**    | Vanilla  | ✅      | 0.91         | 1.00           | 0.14             | 0.48             | 0.84         | 26.36   | 0.23           | 0.51           |
+| **GPT-4**    | Vanilla  | ❌      | 0.92         | 1.10           | 0.12             | 0.47             | 0.81         | 26.93   | 0.24           | 0.52           |
+| **LLaMA-3.1-405b** | Vanilla  | ✅ | 0.94         | 1.49           | 0.11             | 0.47             | 0.76         | 41.81   | 0.23           | 0.50           |
+| **LLaMA-3.1-405b** | Vanilla  | ❌| 0.92         | 1.53           | 0.10             | 0.45             | 0.78         | 50.91   | 0.23           | 0.50           |
+| **LLaMA-3.1-70b**  | FTwA    | ✅ | 0.88         | 1.50           | 0.09             | 0.42             | 0.84         | 43.69   | 0.22           | 0.48           |
+| **LLaMA-3.1-70b**  | Vanilla  | ✅ | 0.86         | 1.53           | 0.05             | 0.42             | 0.80         | 45.51   | 0.23           | 0.50           |
+| **LLaMA-3.1-70b**  | FTwoA   | ❌ | 0.86         | 1.50           | 0.08             | 0.38             | 0.80         | 51.07   | 0.22           | 0.51           |
+| **LLaMA-3.1-70b**  | Vanilla  | ❌ | 0.87         | 1.56           | 0.06             | 0.38             | 0.76         | 53.24   | 0.22           | 0.50           |
+| **LLaMA-3.1-8b**   | FTwA    | ✅ | 0.78         | 1.63           | 0.05             | 0.37             | 0.79         | 50.33   | 0.22           | 0.52           |
+| **LLaMA-3.1-8b**   | Vanilla  | ✅ | 0.81         | 1.72           | 0.05             | 0.32             | 0.80         | 54.38   | 0.22           | 0.50           |
+| **LLaMA-3.1-8b**   | FTwoA   | ❌ | 0.76         | 1.70           | 0.03             | 0.32             | 0.80         | 55.02   | 0.22           | 0.51           |
+| **LLaMA-3.1-8b**   | Vanilla  | ❌ | 0.78         | 1.76           | 0.04             | 0.30             | 0.83         | 52.99   | 0.22           | 0.50           |
+
+📌 **Key Takeaways**:
+- **Relevance**: **Larger models (405b, 70b) provide better hints** compared to smaller (8b) models.
+- **Readability**: **GPT-4 produces the most readable hints**.
+- **Convergence**: **Answer-aware hints (wA) help LLMs generate better hints**.
+- **Familiarity**: Larger models generate **more familiar hints** based on common knowledge.
+- **Hint Length**: **Finetuned models (FTwA, FTwoA) generate shorter and better hints**.
 
 
 ## 📜 License
