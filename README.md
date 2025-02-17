@@ -88,7 +88,7 @@ The `HintRank` module is designed to **automatically rank hints** based on their
 Ensure you have the required dependencies installed:
 
 ```sh
-pip install transformers torch numpy
+pip install transformers torch numpy scipy
 ```
 
 ### 2️⃣ Import and Initialize HintRank
