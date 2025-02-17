@@ -50,8 +50,8 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 
 ✅ **First human-annotated dataset** for hint generation and ranking.  
 ✅ **HintRank:** A lightweight method for automatic hint ranking.  
+✅ **Human study** evaluating hint effectiveness in helping users answer questions. 
 ✅ **Fine-tuning open-source LLMs** (LLaMA-3.1, GPT-4) for hint generation.  
-✅ **Human study** evaluating hint effectiveness in helping users answer questions.  
 
 ## 📊 Results and Insights
 
@@ -95,7 +95,7 @@ You are a hint generator for factoid questions. The user asks you a question and
 ```text
 Q: Which city is Australia's second-largest industrial centre?
 A: Melbourne
-Hint: This is the second most populous city in Australia after Sydney.
+Hint: 
 ```
 
 #### Example of Answer-Aware vs. Answer-Agnostic Hints
