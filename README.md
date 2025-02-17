@@ -153,13 +153,39 @@ HintRank is an **automatic ranking method** for hints using **BERT-based models*
 ```python
 from hint_rank import HintRank
 
-question = "Which city is Australia's second-largest industrial centre?"
-hint_1 = "This city is the capital of the Australian State of Victoria."
-hint_2 = "This is the second most populous city in Australia after Sydney."
-
+# Initialize the HintRank model
 ranker = HintRank()
-better_hint = ranker.compare(question, hint_1, hint_2)
-print(f"Better Hint: {better_hint}")
+
+# Define question, answer, and hints
+question = "What is the capital of Austria?"
+answer = "Vienna"
+hints = [
+    "Mozart and Beethoven once lived here.",
+    "It is a big city in Europe.",
+    "Austria’s largest city and capital."
+]
+
+# Pairwise Comparison Example
+print("Pairwise Hint Comparison\n")
+better_hint_answer_aware = ranker.pairwise_compare(question, hints[1], hints[2], answer)
+better_hint_answer_agnostic = ranker.pairwise_compare(question, hints[0], hints[1])
+
+print(f"Answer-Aware: Hint {2 if better_hint_answer_aware == 1 else 3} is better than Hint {3 if better_hint_answer_aware == 0 else 2}.")
+print(f"Answer-Agnostic: Hint {1 if better_hint_answer_agnostic == 1 else 2} is better than Hint {2 if better_hint_answer_agnostic == 0 else 1}.")
+
+print("\nListwise Hint Ranking")
+
+# Answer-Aware Ranking
+print("\nAnswer-Aware Ranked Hints:")
+ranked_hints_answer_aware = ranker.listwise_compare(question, hints, answer)
+for i, (hint, _) in enumerate(ranked_hints_answer_aware):
+    print(f"Rank {i + 1}: {hint}")
+
+# Answer-Agnostic Ranking
+print("\nAnswer-Agnostic Ranked Hints:")
+ranked_hints_answer_agnostic = ranker.listwise_compare(question, hints)
+for i, (hint, _) in enumerate(ranked_hints_answer_agnostic):
+    print(f"Rank {i + 1}: {hint}")
 ```
 
 📌 **HintRank achieves** higher accuracy compared to **Convergence and LLM-based hint ranking methods**, making it an efficient and reliable tool.
