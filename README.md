@@ -3,8 +3,11 @@
 <a href="https://doi.org/10.48550/arXiv.2412.01626"><img src="https://img.shields.io/static/v1?label=Paper&message=arXiv&color=green&logo=arxiv"></a>
 <a href="https://colab.research.google.com/github/DataScienceUIBK/WikiHint/blob/main/HintRank/Demo.ipynb"><img src="https://img.shields.io/static/v1?label=Colab&message=Demo&logo=Google%20Colab&color=f9ab00"></a>
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)
-[![en](https://img.shields.io/badge/Lang-En-red.svg)](https://github.com/DataScienceUIBK/WikiHint/blob/main/README.md)
-[![ch](https://img.shields.io/badge/Lang-Ch-brown.svg)](https://github.com/DataScienceUIBK/WikiHint/blob/main/README.ch.md)
+[![en](https://img.shields.io/badge/Lang-EN-red.svg)](https://github.com/DataScienceUIBK/WikiHint/blob/main/README.md)
+[![ch](https://img.shields.io/badge/Lang-CH-brown.svg)](https://github.com/DataScienceUIBK/WikiHint/blob/main/README.ch.md)
+[![ch](https://img.shields.io/badge/Lang-GR-brown.svg)](https://github.com/DataScienceUIBK/WikiHint/blob/main/README.gr.md)
+[![ch](https://img.shields.io/badge/Lang-FR-brown.svg)](https://github.com/DataScienceUIBK/WikiHint/blob/main/README.fr.md)
+[![ch](https://img.shields.io/badge/Lang-RU-brown.svg)](https://github.com/DataScienceUIBK/WikiHint/blob/main/README.ru.md)
 <img src="https://github.com/DataScienceUIBK/WikiHint/blob/main/WikiHint/Pipeline.png">
 
 WikiHint is a **human-annotated dataset** designed for **automatic hint generation and ranking** for factoid questions. This dataset, based on Wikipedia, contains **5,000 hints for 1,000 questions** and supports research in **hint evaluation, ranking, and generation**.
