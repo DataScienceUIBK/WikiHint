@@ -11,31 +11,31 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 
 ```
 📂 WikiHint/                # 🗂 Dataset files
-│   📄 Training.json        # 📊 Training dataset (900 questions, 4500 hints)
-│   📄 Test.json            # 📊 Test dataset (100 questions, 500 hints)
+│   ├── 📄 Training.json        # 📊 Training dataset (900 questions, 4500 hints)
+│   ├── 📄 Test.json            # 📊 Test dataset (100 questions, 500 hints)
 │
-📂 Experiments/             # 🧪 Model-generated hints
-│   📜 GPT-4-Vanilla-answer-agnostic.json
-│   📜 GPT-4-Vanilla-answer-aware.json
-│   📜 LLaMA-3.1-405b-Vanilla-answer-agnostic.json
-│   📜 LLaMA-3.1-405b-Vanilla-answer-aware.json
-│   📜 LLaMA-3.1-70b-FTwA-answer-aware.json
-│   📜 LLaMA-3.1-70b-FTwoA-answer-agnostic.json
-│   📜 LLaMA-3.1-70b-Vanilla-answer-agnostic.json
-│   📜 LLaMA-3.1-70b-Vanilla-answer-aware.json
-│   📜 LLaMA-3.1-8b-FTwA-answer-aware.json
-│   📜 LLaMA-3.1-8b-FTwoA-answer-agnostic.json
-│   📜 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
-│   📜 LLaMA-3.1-8b-Vanilla-answer-aware.json
+├── 📂 Experiments/             # 🧪 Model-generated hints
+│   ├── 📜 GPT-4-Vanilla-answer-agnostic.json
+│   ├── 📜 GPT-4-Vanilla-answer-aware.json
+│   ├── 📜 LLaMA-3.1-405b-Vanilla-answer-agnostic.json
+│   ├── 📜 LLaMA-3.1-405b-Vanilla-answer-aware.json
+│   ├── 📜 LLaMA-3.1-70b-FTwA-answer-aware.json
+│   ├── 📜 LLaMA-3.1-70b-FTwoA-answer-agnostic.json
+│   ├── 📜 LLaMA-3.1-70b-Vanilla-answer-agnostic.json
+│   ├── 📜 LLaMA-3.1-70b-Vanilla-answer-aware.json
+│   ├── 📜 LLaMA-3.1-8b-FTwA-answer-aware.json
+│   ├── 📜 LLaMA-3.1-8b-FTwoA-answer-agnostic.json
+│   ├── 📜 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
+│   ├── 📜 LLaMA-3.1-8b-Vanilla-answer-aware.json
 │
-📂 HumanEvaluation/         # 👨‍🔬 Human evaluation data
-│   📂 Person_1/ (Person_2, ..., Person_5)
-│   │   📑 Part_1.xlsx
-│   │   📑 Part_2.xlsx
-│   │   📑 ...
-│   │   📑 Part_10.xlsx
+├── 📂 HumanEvaluation/         # 👨‍🔬 Human evaluation data
+│   ├── 📂 Person_1/ (Person_2, ..., Person_5)
+│   │   ├── 📑 Part_1.xlsx
+│   │   ├── 📑 Part_2.xlsx
+│   │   ├── 📑 ...
+│   │   ├── 📑 Part_10.xlsx
 │
-📘 README.md                # 📖 This file
+└── 📘 README.md                # 📖 This file
 ```
 
 ## 🗂 Dataset Overview
