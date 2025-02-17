@@ -15,18 +15,18 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 │   ├── 📄 Test.json                                        # 📊 Test dataset (100 questions, 500 hints)
 │
 ├── 📂 Experiments/                                         # 🧪 Model-generated hints
-│   ├── 📜 GPT-4-Vanilla-answer-agnostic.json
-│   ├── 📜 GPT-4-Vanilla-answer-aware.json
-│   ├── 📜 LLaMA-3.1-405b-Vanilla-answer-agnostic.json
-│   ├── 📜 LLaMA-3.1-405b-Vanilla-answer-aware.json
-│   ├── 📜 LLaMA-3.1-70b-FTwA-answer-aware.json
-│   ├── 📜 LLaMA-3.1-70b-FTwoA-answer-agnostic.json
-│   ├── 📜 LLaMA-3.1-70b-Vanilla-answer-agnostic.json
-│   ├── 📜 LLaMA-3.1-70b-Vanilla-answer-aware.json
-│   ├── 📜 LLaMA-3.1-8b-FTwA-answer-aware.json
-│   ├── 📜 LLaMA-3.1-8b-FTwoA-answer-agnostic.json
-│   ├── 📜 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
-│   ├── 📜 LLaMA-3.1-8b-Vanilla-answer-aware.json
+│   ├── 📄 GPT-4-Vanilla-answer-agnostic.json
+│   ├── 📄 GPT-4-Vanilla-answer-aware.json
+│   ├── 📄 LLaMA-3.1-405b-Vanilla-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-405b-Vanilla-answer-aware.json
+│   ├── 📄 LLaMA-3.1-70b-FTwA-answer-aware.json
+│   ├── 📄 LLaMA-3.1-70b-FTwoA-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-70b-Vanilla-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-70b-Vanilla-answer-aware.json
+│   ├── 📄 LLaMA-3.1-8b-FTwA-answer-aware.json
+│   ├── 📄 LLaMA-3.1-8b-FTwoA-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-8b-Vanilla-answer-agnostic.json
+│   ├── 📄 LLaMA-3.1-8b-Vanilla-answer-aware.json
 │
 ├── 📂 HumanEvaluation/                                     # 👨‍🔬 Human evaluation data
 │   ├── 📂 Person_1/ (Person_2, ..., Person_5)
