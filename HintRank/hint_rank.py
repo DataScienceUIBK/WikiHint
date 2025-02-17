@@ -118,7 +118,7 @@ if __name__ == '__main__':
     hints = [
         "Mozart and Beethoven once lived here.",
         "It is a big city in Europe.",
-        "Austria’s largest city and capital."
+        "Austria’s largest city."
     ]
 
     # Pairwise Comparison Example
