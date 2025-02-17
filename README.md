@@ -53,14 +53,14 @@ WikiHint is a **human-annotated dataset** designed for **automatic hint generati
 ✅ **Human study** evaluating hint effectiveness in helping users answer questions.  
 ✅ **Fine-tuning open-source LLMs** (LLaMA-3.1, GPT-4) for hint generation.  
 
-## 📊 Results and Insights
+## 📈 Key Insights
 
 - **Answer-aware hints** improve hint effectiveness.  
 - **Finetuned LLaMA models** generate better hints than vanilla models.  
 - **Shorter hints** tend to be **more effective** than longer ones.  
 - **Human-generated hints** outperform LLM-generated hints in clarity and ranking.
 
-## 📊 Dataset Comparison (WikiHint vs. TriviaHG)
+## 📊 🆚 WikiHint vs. TriviaHG Dataset Comparison
 
 The table below compares **WikiHint** with **TriviaHG**, the largest previous dataset for hint generation. WikiHint has **better convergence**, **shorter hints**, and **higher-quality** hints based on multiple evaluation metrics.
 
@@ -77,7 +77,7 @@ The table below compares **WikiHint** with **TriviaHG**, the largest previous da
 - **WikiHint outperforms TriviaHG** in **convergence**, meaning its hints help users **arrive at answers more effectively**.
 - **WikiHint’s hints are shorter**, leading to **more concise and effective guidance**.
 
-## 📊 Evaluation of Generated Hints
+## 📊🤖 Evaluation of Generated Hints
 
 This table presents an **evaluation of generated hints** across different **LLMs (LLaMA-3.1, GPT-4)** based on **Relevance, Readability, Convergence, Familiarity, Hint Length, and Answer Leakage**. It provides insights into how **finetuning (FT)** and **answer-awareness (wA)** affect hint quality.
 
