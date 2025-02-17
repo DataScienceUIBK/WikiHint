@@ -85,7 +85,7 @@ pip install transformers torch numpy scipy
 
 ### 2️⃣ Import and Initialize HintRank
 
-Navigate to the `wikiHint` directory and import the `HintRank` module:
+Navigate to the `HintRank` directory and import the `hint_rank` module:
 
 ```python
 from HintRank.hint_rank import HintRank
