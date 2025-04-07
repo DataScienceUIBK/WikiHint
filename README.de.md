@@ -9,6 +9,18 @@
 
 WikiHint ist ein **von Menschen annotierter Datensatz**, der für die **automatische Generierung und Bewertung von Hinweisen** bei Faktfragen entwickelt wurde. Der Datensatz basiert auf Wikipedia und enthält **5.000 Hinweise zu 1.000 Fragen**. Er unterstützt die Forschung in den Bereichen **Hinweisbewertung, -ranking und -generierung**.
 
+## <img src="https://github.com/DataScienceUIBK/TriviaHG/blob/main/Framework/gif-dan.gif" width="32" height="32"/> Achtung <img src="https://github.com/DataScienceUIBK/TriviaHG/blob/main/Framework/gif-dan.gif" width="32" height="32"/>
+
+Ab **Februar 2025** empfehlen wir die Nutzung von **HintEval**, dem Framework für **Hinweiserzeugung und -bewertung**. HintEval enthält den **WikiHint-Datensatz** sowie die Evaluationsmetriken aus der WikiHint-Publikation und macht die Arbeit mit Hinweisen so einfach wie nie zuvor.
+
+Hier geht’s zu HintEval:  
+- 📖 **[HintEval-Dokumentation](http://hinteval.readthedocs.io/)**  
+- 📦 **[HintEval PyPI-Installation](https://pypi.org/project/hinteval/)**  
+- 💻 **[HintEval GitHub-Repository](https://github.com/DataScienceUIBK/HintEval)**  
+- 📜 **[HintEval-Paper (arXiv)](https://doi.org/10.48550/arXiv.2502.00857)**  
+
+Für eine **nahtlose Integration** von Hinweiserzeugung und -bewertung empfehlen wir dringend den **Umstieg** auf **HintEval**!
+
 ## 🗂 Überblick
 
 - **1.000 Fragen** mit **5.000 manuell erstellten Hinweisen**.
