@@ -11,6 +11,18 @@
 
 WikiHint is a **human-annotated dataset** designed for **automatic hint generation and ranking** for factoid questions. This dataset, based on Wikipedia, contains **5,000 hints for 1,000 questions** and supports research in **hint evaluation, ranking, and generation**.
 
+## <img src="https://github.com/DataScienceUIBK/TriviaHG/blob/main/Framework/gif-dan.gif" width="32" height="32"/> Attention<img src="https://github.com/DataScienceUIBK/TriviaHG/blob/main/Framework/gif-dan.gif" width="32" height="32"/>
+
+As of **February 2025**, we recommend using **HintEval**, the framework for **hint generation and evaluation**. HintEval includes the **WikiHint dataset** and the evaluation metrics introduced in the WikiHint paper, making it easier than ever to work with hints.  
+
+Check out HintEval here:  
+- 📖 **[HintEval Documentation](http://hinteval.readthedocs.io/)**
+- 📦 **[HintEval PyPI Installation](https://pypi.org/project/hinteval/)**
+- 💻 **[HintEval GitHub Repository](https://github.com/DataScienceUIBK/HintEval)**
+- 📜 **[HintEval Paper (arXiv)](https://doi.org/10.48550/arXiv.2502.00857)**  
+
+For **seamless integration** of hint generation and evaluation, we highly recommend **migrating** to **HintEval**!
+
 ## 🗂 Overview
 
 - **1,000 questions** with **5,000 manually created hints**.
