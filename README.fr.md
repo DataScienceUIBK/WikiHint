@@ -9,6 +9,18 @@
 
 WikiHint est un **jeu de données annoté par des humains** conçu pour la **génération et le classement automatiques d'indices** pour les questions factuelles. Ce jeu de données, basé sur Wikipedia, contient **5 000 indices pour 1 000 questions** et soutient la recherche sur **l’évaluation, le classement et la génération d’indices**.
 
+## <img src="https://github.com/DataScienceUIBK/TriviaHG/blob/main/Framework/gif-dan.gif" width="32" height="32"/> Attention <img src="https://github.com/DataScienceUIBK/TriviaHG/blob/main/Framework/gif-dan.gif" width="32" height="32"/>
+
+À partir de **février 2025**, nous recommandons d’utiliser **HintEval**, le framework pour la **génération et l’évaluation d’indices**. HintEval inclut le **jeu de données WikiHint** ainsi que les métriques d’évaluation présentées dans l’article WikiHint, rendant le travail avec les indices plus simple que jamais.
+
+Découvrez HintEval ici :  
+- 📖 **[Documentation HintEval](http://hinteval.readthedocs.io/)**  
+- 📦 **[Installation HintEval via PyPI](https://pypi.org/project/hinteval/)**  
+- 💻 **[Dépôt GitHub HintEval](https://github.com/DataScienceUIBK/HintEval)**  
+- 📜 **[Article HintEval (arXiv)](https://doi.org/10.48550/arXiv.2502.00857)**  
+
+Pour une **intégration fluide** de la génération et de l’évaluation d’indices, nous vous recommandons vivement de **migrer** vers **HintEval** !
+
 ## 🗂 Vue d’ensemble
 
 - **1 000 questions** avec **5 000 indices créés manuellement**.
