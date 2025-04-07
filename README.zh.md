@@ -10,6 +10,18 @@
 
 WikiHint 是一个**人工标注数据集**，专为**自动提示生成与排序**设计。该数据集基于维基百科，包含 **1,000 道问题及 5,000 条提示**，支持**提示评估、排序和生成**相关研究。
 
+## <img src="https://github.com/DataScienceUIBK/TriviaHG/blob/main/Framework/gif-dan.gif" width="32" height="32"/> 注意 <img src="https://github.com/DataScienceUIBK/TriviaHG/blob/main/Framework/gif-dan.gif" width="32" height="32"/>
+
+从 **2025 年 2 月** 起，我们推荐使用 **HintEval** —— 一个用于**提示生成与评估**的框架。HintEval 集成了 **WikiHint 数据集** 以及 WikiHint 论文中提出的评估指标，让提示处理变得前所未有的简单。
+
+点击下方链接了解 HintEval：  
+- 📖 **[HintEval 文档](http://hinteval.readthedocs.io/)**  
+- 📦 **[HintEval PyPI 安装](https://pypi.org/project/hinteval/)**  
+- 💻 **[HintEval GitHub 仓库](https://github.com/DataScienceUIBK/HintEval)**  
+- 📜 **[HintEval 论文 (arXiv)](https://doi.org/10.48550/arXiv.2502.00857)**  
+
+为了**无缝集成**提示生成与评估，我们强烈推荐迁移至 **HintEval**！
+
 ## 🗂 数据集概览
 
 - **1,000 道问题**，配有 **5,000 条人工创建的提示**。
