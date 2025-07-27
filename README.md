@@ -267,20 +267,27 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 
 ## 📑 Citation
 
-If you find this work useful, please cite [📜our paper](https://doi.org/10.48550/arXiv.2412.01626):
+If you find this work useful, please cite [📜our paper](https://doi.org/10.1145/3726302.3730284):
 
-Mozafari, J., Gerhold, F., & Jatowt, A. (2024). WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation. arXiv preprint arXiv:2412.01626.
+Jamshid Mozafari, Florian Gerhold, and Adam Jatowt. 2025. WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation. In Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '25). Association for Computing Machinery, New York, NY, USA, 3821–3831. https://doi.org/10.1145/3726302.3730284
 
 ### 📄 BibTeX:
 ```bibtex
-@article{mozafari2025wikihinthumanannotateddatasethint,
-      title={WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation}, 
-      author={Jamshid Mozafari and Florian Gerhold and Adam Jatowt},
-      year={2025},
-      eprint={2412.01626},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      doi={10.48550/arXiv.2412.01626}, 
+@inproceedings{10.1145/3726302.3730284,
+	author = {Mozafari, Jamshid and Gerhold, Florian and Jatowt, Adam},
+	title = {WikiHint: A Human-Annotated Dataset for Hint Ranking and Generation},
+	year = {2025},
+	isbn = {9798400715921},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3726302.3730284},
+	doi = {10.1145/3726302.3730284},
+	booktitle = {Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+	pages = {3821–3831},
+	numpages = {11},
+	keywords = {hint dataset, hint evaluation, hint generation, hint ranking},
+	location = {Padua, Italy},
+	series = {SIGIR '25}
 }
 ```
 
